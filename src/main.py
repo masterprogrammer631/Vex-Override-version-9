@@ -115,10 +115,10 @@ def drive_to_target(type, id, timeout=5):
     left_drive.stop(BRAKE)
     right_drive.stop(BRAKE)
 
-def lift_up(turns=1):   
+def lift_up(turns=1.0):   
     lift_motor.spin_for(FORWARD, turns, TURNS)
 
-def lift_down(turns=1):
+def lift_down(turns=1.0):
     lift_motor.spin_for(REVERSE, turns, TURNS)
 
 def claw_open():
